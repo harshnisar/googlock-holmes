@@ -1,0 +1,60 @@
+<?php require_once("nlplib.php"); ?>
+
+<head>
+<title>Signup </title>
+
+</head>
+
+<body>
+
+<form name="frm" method="post" action="/sign" >
+<h1> G H </h1>
+<h3>Sign Up</h3>
+
+<table>
+
+
+
+<tr>
+<td>Name 1</td>
+<td><input type="text" name="name1" value ="" size="10"></td>
+</tr>
+
+<tr>
+<td>Name 2</td>
+<td><input type="text" name="name2" value ="" size="10"></td>
+</tr>
+
+<tr>
+<td>Team Name</td>
+<td><input type="text" name="team" value ="" size="10"></td>
+</tr>
+
+
+
+
+
+<tr>
+<td>Mobie Number</td>
+<td><input type="number" name="mobileno" value ="" size="10"></td>
+<td><small>begining with '91'</small></td>
+</tr>
+
+<tr></tr>
+<tr>
+<td>
+
+<?php echo NLP_Captcha(); ?>
+
+<input type="submit" value="Submi t"></td>
+</tr>
+
+
+</table>
+
+<?php if($_POST){
+$nlpValidated=NLP_Validate($_POST['nlpIdentifier'],$_POST['nlpAnswer']);
+if($nlpValidated){ echo "validated"; }else{ echo "not validated"; } } ?>
+</body>
+
+</html>

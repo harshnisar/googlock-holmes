@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Googlock Holmes</title>
+
+<script src="jquery.min.js">
+</script>
+<script>
+
+
+
+$(document).ready(function(){
+  $("#main1").click(function(){
+    $(this).fadeOut(2000);
+	$(this).hide(1000);
+   	$("#mytable").css("display","block");
+	 $("#mytable").fadeOut(0);
+	$("#mytable").fadeIn(1000);
+		 });
+		 $("#tab1").click(function() {
+	$(this).animate({top:'205px'});
+	$("#tab2").animate({left:'205px'});
+	$("#tab3").animate({right:'205px'});
+	$("#tab4").animate({bottom:'205px'});
+	 
+	var href = "/start";
+        setTimeout(function() {location.reload()}, 2000);
+		setTimeout(function() {window.location = href}, 2000);
+	 
+        return false;
+		 });
+			
+			 $("#tab2").click(function() {
+	$("#tab1").animate({top:'205px'});
+	$(this).animate({left:'205px'});
+	$("#tab3").animate({right:'205px'});
+	$("#tab4").animate({bottom:'205px'});
+	 
+	var href = "/register";
+        setTimeout(function() {location.reload()}, 2000);
+		setTimeout(function() {window.location = href}, 2000);
+	 
+        return false;
+		 });
+		
+			
+	 $("#tab3").click(function() {
+	$("#tab1").animate({top:'205px'});
+	$("#tab2").animate({left:'205px'});
+	$(this).animate({right:'205px'});
+	$("#tab4").animate({bottom:'205px'});
+	 
+	var href = "rules.html";
+        setTimeout(function() {location.reload()}, 2000);
+		setTimeout(function() {window.location = href}, 2000);
+	 
+        return false;
+		 });
+		 
+		  $("#tab4").click(function() {
+	$("#tab1").animate({top:'205px'});
+	$("#tab2").animate({left:'205px'});
+	$("#tab3").animate({right:'205px'});
+	$(this).animate({bottom:'205px'});
+	 
+	var href = "https://www.facebook.com/pages/Butter-jam-Tshirts/501648266546343?ref=ts&fref=ts";
+        setTimeout(function() {location.reload()}, 2000);
+		setTimeout(function() {window.location = href}, 2000);
+	 
+        return false;
+		 });
+		 
+});
+</script>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body bgcolor="#F8F8FF">
+<div id="table1">
+<table width="410" border="0" id="mytable" hidden="true" >
+  <tr>
+    <td id="td1"> <a href="/start"><img src="1.jpg" alt="1" width="200" id="tab1" /></a></td>
+    <td id="td3"> <a href="rules.html"><img src="3.jpg" alt="3" width="200" id="tab3" /></a></td>
+  </tr>
+  <tr>
+    <td id="td2"><a href="/register"> <img src="2.jpg" alt="2" width="200" id="tab2" /></a></td>
+    <td id="td4"><a href="https://www.facebook.com/pages/Butter-jam-Tshirts/501648266546343?ref=ts&fref=ts"><img src="4.jpg" alt="4" width="200" id="tab4" /></a></td>
+  </tr>
+</table>
+</div>
+<div id="main" main>
+  <p><a href="#"><img src="header.jpg" alt="foo" width="410" height="410"  id="main1" />
+  </a></p>
+  <p>&nbsp;</p>
+</div>
+
+  
+
+</body>
+
+</html>

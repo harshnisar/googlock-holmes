@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>scoreboard</title>
+<style>
+
+#table{position:absolute;
+	top: 30%;
+	left: 40%;
+   
+    margin-top: -(Y/2)px;	
+	 margin-left: -(Y/2)px;}
+#table td{ text-align:center;
+	
+}
+</style>
+</head>
+
+
+<body style="font-family:Garamond">
+<div id="table">
+<table width="312" border="10" cellspacing="2">
+  <tr>
+    <td width="45">RANK</td>
+    <td width="168">TEAM NAME </td>
+     <td width="59">SCORE</td>
+  </tr>
+  {% set count=1 %}
+  {% for teams in team_list %}
+  <tr>
+    <td>{{count}}</td>
+    <td>{{teams.tname}}</td>
+     <td>{{teams.score}}</td>
+  </tr>
+  {% set count=count+1 %}
+  {% endfor %}
+  
+  
+</table>
+</div>
+</body>
+</html>

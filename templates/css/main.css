@@ -1,0 +1,23 @@
+#main img{
+	position:absolute;
+	top: 25%;
+	left: 35%;
+   
+    margin-top: -(Y/2)px;	
+	 margin-left: -(Y/2)px;
+}
+
+#table1{  
+	
+	position:absolute;
+	top:25%;
+	left:35%;
+   
+    margin-top: -(Y/2)px;	
+	 margin-left: -(Y/2)px;
+ 
+	}
+#table1 img{ position:relative;
+-moz-transition:all 1s;
+-webkit-transition:all 1s;
+		}

@@ -1,0 +1,130 @@
+<html>
+
+<head>
+<title>Signup </title>
+<script type = "text/Javascript">
+
+function ValidateForm()
+{
+	var dastd = frm.dastudent
+	var name1 = frm.name1
+	var name2 = frm.name2
+	var tname = frm.teamname
+	var pwd1 = frm.password1
+	var pwd2 = frm.password2
+	var email = frm.email
+	var mob = frm.mobileno
+
+	if(pwd1.value!=pwd2.value)
+	{
+		alert("Passwords do not match") 
+		pwd1.focus()
+		return false
+	}
+
+		
+	if(name1.value.length ==0 )
+	{
+		alert("Name 1 is a compulsory field") 
+		name1.focus()
+		return false
+	}
+
+	if(tname.value.length ==0 )
+	{
+		alert("Team name is a compulsory field") 
+		tname.focus()
+		return false
+	}
+	
+	if(pwd1.value.length ==0 )
+	{
+		alert("Password is a compulsory field") 
+		pwd1.focus()
+		return false
+	}
+
+	if(email.value.length ==0 )
+	{
+		alert("Email is a compulsory field") 
+		email.focus()
+		return false
+	}
+	if(mob.value.length !=12 )
+	{
+		alert("Enter a valid mobile number") 
+		mob.focus()
+		return false
+	}
+
+
+	return true
+}
+</script>
+<style>
+#table1{
+	position:absolute;
+	top:25%;
+	left:30%;
+   
+    margin-top: -(Y/2)px;	
+	 margin-left: -(Y/2)px;
+	
+	}
+</style>
+</head>
+
+<body>
+
+<form name="frm" method="post" action="new.html" onSubmit ="return ValidateForm()">
+<h1> G H </h1>
+<h3>Sign Up</h3>
+<h5> * compulsory fields</h5>
+<table id="table1">
+  <tr>
+    <td><input type="checkbox" name="dastudent" value ="dastudent" size="10">
+      DA-IICT Student</td>
+  </tr>
+  <tr>
+    <td>Name 1 *</td>
+    <td><input type="text" name="name1" value ="" size="10"></td>
+  </tr>
+  <tr>
+    <td>Name 2</td>
+    <td><input type="text" name="name2" value ="" size="10"></td>
+  </tr>
+  <tr>
+    <td>Team Name *</td>
+    <td><input type="text" name="teamname" value ="" size="10"></td>
+  </tr>
+  <tr>
+    <td>Password *</td>
+    <td><input type="password" name="password1" value ="" size="10"></td>
+  </tr>
+  <tr>
+    <td>Confirm Password *</td>
+    <td><input type="password" name="password2" value ="" size="10"></td>
+  </tr>
+  <tr>
+    <td>Email id *</td>
+    <td><input type="email" name="email" value ="" size="10"></td>
+    <td><small>DA-IICT students must provide their DA-IICT Email id </small></td>
+  </tr>
+  <tr>
+    <td><p>Mobile Number *</p></td>
+    <td><input type="number" name="mobileno" value ="" size="10"></td>
+    <td><blockquote>
+      <blockquote>
+        <p><small>begining with '91'</small></p>
+      </blockquote>
+    </blockquote></td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td><input type="submit" value="Submit">
+    <input type="reset" value="Reset"></td>
+  </tr>
+</table>
+</body>
+
+</html>

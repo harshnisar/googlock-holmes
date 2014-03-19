@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Googlock Holmes</title>
+<style>
+img{
+	position: absolute;
+	top: 45%;
+	left: 45%;
+    margin-left: -(Y/2)px;
+    margin-top: -(Y/2)px;	
+		}
+		
+
+		
+				
+</style>
+</head>
+
+<body background="img_6320.jpg">
+<img src="images (1).jpg" alt="foo" width="151" />
+<IMG STYLE="position:absolute; TOP:35px; LEFT:170px; WIDTH:50px; HEIGHT:50px" SRC="time table.jpg">
+
+</body>
+</html>
